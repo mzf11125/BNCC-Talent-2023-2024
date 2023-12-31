@@ -1,6 +1,6 @@
 import ActionButtons from "./action-buttons";
 import Logo from "./logo";
-import NavigationBar from "./navigation-bar";
+import { NavigationMenuBar } from "./navigation-bar";
 
 const navbar = () => {
   return (
@@ -8,11 +8,11 @@ const navbar = () => {
       className="
     flex
     justify-between
-    items-center px-10 border-b
+    items-center px-10 border-b h-40
     "
     >
       <Logo />
-      <NavigationBar />
+      <NavigationMenuBar />
       <ActionButtons />
     </div>
   );
