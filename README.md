@@ -11,6 +11,8 @@ npx shadcn-ui@latest add carousel
 npx shadcn-ui@latest add slider
 npm i lottie-react
 npx shadcn-ui@latest add navigation-menu
+npm install react-email @react-email/components -E
+npx shadcn-ui@latest add form
 
 npm install react-icons
 To run locally, use the command "npm run dev" in your terminal. To build for production, use the command "npm run build".
