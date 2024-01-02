@@ -13,7 +13,10 @@ npm i lottie-react
 npx shadcn-ui@latest add navigation-menu
 npm install react-email @react-email/components -E
 npx shadcn-ui@latest add form
-
+npm i react-hook-form
+npx shadcn-ui@latest add input
+npx shadcn-ui@latest add toast
+npx shadcn-ui@latest add card
 npm install react-icons
 To run locally, use the command "npm run dev" in your terminal. To build for production, use the command "npm run build".
 
