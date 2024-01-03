@@ -1,5 +1,6 @@
 import React from "react";
 import ActionButtons from "../navbar/action-buttons";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
@@ -13,7 +14,9 @@ const Footer = () => {
         </p>
         <form>
           {/* <input type="email" placeholder="Enter your email" /> */}
-          <ActionButtons />
+          <div className="md:flex md:space-x-4">
+            <Button className="text-md button">Get Started</Button>
+          </div>
         </form>
       </div>
       {/* <div>Other footer content</div> */}

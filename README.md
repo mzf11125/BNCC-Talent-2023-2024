@@ -18,7 +18,12 @@ npx shadcn-ui@latest add input
 npx shadcn-ui@latest add toast
 npx shadcn-ui@latest add card
 npm install react-icons
+npx shadcn-ui@latest add textarea
+npm i typewriter-effect
+npm i framer-motion
+
 To run locally, use the command "npm run dev" in your terminal. To build for production, use the command "npm run build".
 
 Following this tutorial:
 https://www.youtube.com/watch?v=Z0cn02PTKBQ&t=14s
+and others

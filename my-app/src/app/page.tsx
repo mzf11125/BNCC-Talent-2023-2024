@@ -4,6 +4,7 @@ import SignupForm from "./form/inputform";
 import Footer from "./footer/footer";
 import FormField from "./form/formfixed";
 import HeroPage from "./hero/heropage";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         </div>
       </section> */}
       <HeroPage />
+      {/* <Button onClick={} /> */}
       {/* <InputForm /> */}
       {/* <FormField /> */}
       <Footer />

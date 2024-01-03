@@ -42,7 +42,7 @@ const ActionButtons = () => {
         <Button className="text-md" variant="ghost">
           Sign in
         </Button>
-        <Button className="text-md bg-blue-500">Get Started</Button>
+        <Button className="text-md button">Get Started</Button>
       </div>
     </div>
   );
