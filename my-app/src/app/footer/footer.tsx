@@ -16,7 +16,7 @@ const Footer = () => {
           <ActionButtons />
         </form>
       </div>
-      <div>Other footer content</div>
+      {/* <div>Other footer content</div> */}
     </footer>
   );
 };
