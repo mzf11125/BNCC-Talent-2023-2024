@@ -8,8 +8,8 @@ const Logo = () => {
       <Image
         className="logo"
         src="/image/0f303aa5-7488-42a7-a831-29e1c22d2b6c.svg"
-        width={150}
-        height={100}
+        width={60}
+        height={60}
         alt="logo"
       />
       {/* <FaCode width={100} height={100} alt="logo" /> */}

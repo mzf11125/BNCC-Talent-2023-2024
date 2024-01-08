@@ -22,15 +22,17 @@ const ActionButtons = () => {
           <SheetTrigger>
             <AlignJustify />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="bg-gray-800" style={{ outline: "none" }}>
             <SheetHeader>
               <SheetDescription>
-                <div className="flex flex-col space-y-4 items-start w-full text-lg text-black mt-10">
-                  <Link href="/">Contact Us</Link>
-                  <Link href="/">Get Started</Link>
-                  <Link href="/">Our Product</Link>
+                <div className="flex flex-col space-y-4 items-start w-full text-lg text-white mt-10">
+                  <Link href="/">Home</Link>
                   <Link href="/">About Us</Link>
-                  <Link href="/">Features</Link>
+                  <Link href="/">Our Community</Link>
+                  <Link href="/">Hackathon</Link>
+                  <Button className="text-md button">
+                    <a href="/#signup-section">Join the newsletter</a>
+                  </Button>
                 </div>
               </SheetDescription>
             </SheetHeader>
@@ -39,10 +41,12 @@ const ActionButtons = () => {
       </div>
 
       <div className="hidden md:flex md:space-x-4">
-        <Button className="text-md" variant="ghost">
-          Sign in
+        <Button className="text-md button bg-green-500">
+          <a href="/#signup-section">Join the newsletter</a>
         </Button>
-        <Button className="text-md button">Get Started</Button>
+        {/* <Button className="text-md" variant="ghost">
+          
+        </Button> */}
       </div>
     </div>
   );

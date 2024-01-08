@@ -191,9 +191,12 @@ const components: { title: string; description: string }[] = [
 
 export function NavigationMenuBar() {
   return (
-    <NavigationMenu>
-      <NavigationMenuList className="hidden md:flex md:space-x-4">
-        {/* <NavigationMenuItem>
+    <div className="flex justify-center items-center">
+      {" "}
+      {/* Add justify-center class */}
+      <NavigationMenu className="items-center">
+        <NavigationMenuList className="hidden md:flex md:space-x-4">
+          {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -221,7 +224,7 @@ export function NavigationMenuBar() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem> */}
-        {/* <NavigationMenuItem>
+          {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Templates</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -240,56 +243,69 @@ export function NavigationMenuBar() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem> */}
-        <NavigationMenuItem>
-          <Button className="text-md" variant="ghost">
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink
-                className="
+          <NavigationMenuItem>
+            <Button className="text-md" variant="ghost">
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className="
               font-medium"
-              >
-                Home
-              </NavigationMenuLink>
-            </Link>
-          </Button>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Button className="text-md" variant="ghost">
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink
-                className="
+                >
+                  Home
+                </NavigationMenuLink>
+              </Link>
+            </Button>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Button className="text-md" variant="ghost">
+              <Link href="/#about-section" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className="
               font-medium"
-              >
-                Pricing
-              </NavigationMenuLink>
-            </Link>
-          </Button>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Button className="text-md" variant="ghost">
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink
-                className="
+                >
+                  About Us
+                </NavigationMenuLink>
+              </Link>
+            </Button>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Button className="text-md" variant="ghost">
+              <Link href="/#about-section" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className="
               font-medium"
-              >
-                Pricing
-              </NavigationMenuLink>
-            </Link>
-          </Button>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Button className="text-md" variant="ghost">
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink
-                className="
+                >
+                  Community
+                </NavigationMenuLink>
+              </Link>
+            </Button>
+          </NavigationMenuItem>
+          {/* <NavigationMenuItem>
+            <Button className="text-md" variant="ghost">
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className="
               font-medium"
-              >
-                About Us
-              </NavigationMenuLink>
-            </Link>
-          </Button>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+                >
+                  Events
+                </NavigationMenuLink>
+              </Link>
+            </Button>
+          </NavigationMenuItem> */}
+          <NavigationMenuItem>
+            <Button className="text-md" variant="ghost">
+              <Link href="/#carousel" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className="
+              font-medium"
+                >
+                  Hackathons
+                </NavigationMenuLink>
+              </Link>
+            </Button>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 }
 
@@ -308,8 +324,10 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <div className="text-sm font-medium leading-none items-center">
+            {title}
+          </div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground items-center justify-center">
             {children}
           </p>
         </a>

@@ -8,11 +8,16 @@ const navbar = () => {
       className="
     flex
     justify-between
-    items-center px-10 border-b h-40
+    items-center px-10  h-20
+    bg-gray-900
+    text-white
     "
     >
-      <Logo />
       <NavigationMenuBar />
+      <div className="flex justify-center items-center mr-80">
+        {" "}
+        <Logo />
+      </div>
       <ActionButtons />
     </div>
   );
