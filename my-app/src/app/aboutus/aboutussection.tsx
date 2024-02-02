@@ -78,9 +78,7 @@ bg-gray-700
                 text-4xl
                 md:text-6xl
                 font-bold
-                pb-10
-                
-                "
+                pb-10"
           >
             From tech enthusiasts to tech professionals.
           </div>
